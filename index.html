@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="./css/global.css" type="text/css" rel="stylesheet">
+    <link href="./css/landing.css" type="text/css" rel="stylesheet">
+    <title>Coffee Shop - Home</title>
+</head>
+<body>
+
+<header>
+    <ul class="header-items">
+        <li class="header-items__list"><a href="../index.html">
+            <img class="coffee-beans" src="../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee-beans" width="50px">
+         </a></li>
+         <li class="nitro class header-items__list"><a href="./index.html" alt="landing page">nitro</a></li>
+         <li class="header-items__list"><a href="./index.html">ABOUT</a></li>
+         <li class="header-items__list"><a href="./pages/menu.html">MENU</a></li>
+        <li class="header-items__list"><a class="nav__list--shopnow" href="./pages/menu.html">SHOP NOW</a></li>
+    </ul>
+</header>
+    <section class="coffee-description">
+        <h1 class="text">Nitro Coffee</h1>
+        <p class="coffee-description__text">Coffee is a brewed drink prepared from <br>roasted coffee beans, the seeds of berries <br>from certain Coffea species.</p>
+        <a class="coffee-description__shop-now" href="./pages/menu.html">SHOP NOW</a>
+        <aside>
+        <img class="coffee-description__coffeebag--image" src="./assets/images/coffeebeans-hero.png" alt="coffee bag">
+    </aside>
+</section>
+
+
+<!--Section for 'Our Products'-->
+<h2 class="text__product">Our Products</h2>
+<section class="productCard">
+    <div class="productCard__cardDetails">
+        <img src="./assets/images/coffeebeans.png" alt="Coffee Beans" class="productCard__image">
+        <div class="productCard_content">
+        <h3 class="productCard__name">Coffee Beans</h3>
+        <h3 class="productCard__price">$18.99</h3>
+    </div>
+    </div>
+    <div class="productCard__cardDetails">
+        <img src="./assets/images/coldbrew.png" alt="Cold Brew" class="productCard__image">
+        <div class="productCard_content">
+        <h3 class="productCard__name">Cold Brew</h3>
+        <h3 class="productCard__price">$4.99</h3>
+    </div>
+    </div>
+    <div class="productCard__cardDetails">
+        <img src="./assets/images/inhousebrew.png" alt="In-house Brew" class="productCard__image">
+        <div class="productCard_content">
+        <h3 class="productCard__name">In-house Brew</h3>
+        <h3 class="productCard__price">$2.99</h3>
+        </div>
+    </div>
+</section>
+
+<section>
+    <!-- <input class="view-all" type="button" value="VIEW ALL" href="./pages/menu.html"> -->
+    <a href="./pages/menu.html" class="view-all">VIEW ALL</a>
+</section>
+
+
+
+
+<!-- <a href="./pages/menu.html"><input class="view-all" type="button" value="VIEW ALL"></a> - I tried this, but input  is not permitted in anchor tag. Therefore, using a tag in below line of code-->
+
+
+<!--Discounts section-->
+<div class="Discounts">Get 20% off your first order with code: <span class="bold">FirstNitro</span></div>
+
+<footer class="details">
+    <section class="addressSection">
+        <h3 class="addHoursSocial">Address</h3>
+       <p class="address">503 Broadway Penthouse <br>New York</p>
+        <!-- <p class="address">503 Broadway Penthouse, New York</p> -->
+         </section>
+    <section class="hoursSection">
+        <h3 class="addHoursSocial">Hours</h3>
+        <p class="hours">Monday-Friday: <span class="time">9am - 7pm</span></p>
+        <p class="hours">Saturday-Sunday: <span class="time">10am - 5pm</span></p>
+    </section>
+    <section class="socialSection">
+        <h3 class="addHoursSocial">Social</h3>
+       <a href="https://www.facebook.com"><img class="icon" src="./assets/logos/Facebook-Icon.svg" alt="Facebook"></a>
+       <a href="https://www.yelp.com"><img class="icon" src="./assets/logos/Yelp-Icon.svg" alt="Yelp"></a>
+       <a href="https://www.instagram.com"><img class="icon" src="./assets/logos/Instagram-Icon.svg" alt="Instagram"></a>
+    </section>
+
+
+</footer>
+</body>
+</html>
