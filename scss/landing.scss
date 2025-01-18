@@ -114,7 +114,69 @@ body {
 }
 
 
+.product{
+    background-color:  #F7F7F7 ;
+    
+    &__title{
+        text-align: center;
+        padding:3.125rem;
+        margin:0;
+        font-weight: 300;
+        font-size: 3.75rem;
+        color:#393939;
 
+    }
+
+
+    &__card{
+        display:flex;
+        justify-content: space-evenly;
+
+    }
+
+    &__card-cb{
+        background-color: #F7F7F7;
+        width:20.625rem;
+        height:27.5rem;
+        border-radius: .625rem;
+        box-shadow: 0 .3125rem .5625rem -0.0625rem;
+        align-items: center;
+        box-shadow: rgba(0,0,0,0.25);
+        padding-left:2rem;
+
+
+    }
+
+    &__card-cld{
+        background-color: #F7F7F7;
+        width:20.625rem;
+        height:27.5rem;
+        border-radius: .625rem;
+        box-shadow: 0 .3125rem .5625rem -0.0625rem;
+        align-items: center;
+        box-shadow: rgba(0,0,0,0.25);
+        padding-left:2rem;
+
+
+    }
+    &__card-ihb{
+        background-color: #F7F7F7;
+        width:20.625rem;
+        height:27.5rem;
+        border-radius: .625rem;
+        box-shadow: 0 .3125rem .5625rem -0.0625rem;
+        align-items: center;
+        box-shadow: rgba(0,0,0,0.25);
+        padding-left:2rem;
+
+
+    }
+
+    &__viewall{
+        @extend .hero__link;
+       text-align:center
+    }
+}
 
 
 
