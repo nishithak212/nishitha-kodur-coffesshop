@@ -1,0 +1,124 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header-items {
+  list-style-type: none;
+  background-color: #FFF0ED;
+}
+
+.header-items__list {
+  list-style-type: none;
+  display: inline-block;
+  margin: 15px 0;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.header-items .header-items__list a {
+  text-decoration: none;
+  color: #393939;
+  font-size: 1.3125rem;
+  font-weight: 400;
+}
+
+.header-items li .nav__list--shopnow {
+  color: #5BACC3;
+}
+
+.nitro {
+  font-size: 3.125rem;
+  font-weight: 300;
+  color: #393939;
+  margin-left: 0;
+  /* padding-left: 1.25rem; */
+}
+
+.menu {
+  box-sizing: content-box;
+  height: 800px;
+  width: 100%;
+  background-image: url(../assets/images/coffee-circle.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 1.25rem;
+}
+
+.menu__header {
+  box-sizing: content-box;
+  width: 18.75rem;
+  height: 12.5rem;
+  background-color: #393939;
+  font-size: 3.75rem;
+  font-weight: 300;
+  color: #FFF;
+  text-align: center;
+  margin-left: 70rem;
+}
+
+.menuItems {
+  background-color: #393939;
+  color: white;
+  padding: 0;
+  text-align: center;
+  height: 5rem;
+}
+
+.menuItems__list {
+  list-style-type: none;
+  display: inline-block;
+  margin: 15px 0;
+  padding: 5px 10px;
+  border-left: 5px solid #5BACC3;
+  font-size: 1.25rem;
+}
+
+.description {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.125rem;
+  font-weight: 400;
+  /*padding-right:100rem;*/
+  line-break: auto;
+  margin-right: 40rem;
+  margin-left: 40rem;
+  box-sizing: content-box;
+  max-height: 4.5em;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.Hot-Drinks, .Pastries {
+  background-color: #FFF0ED;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.0625rem;
+  font-weight: 300;
+}
+
+.price {
+  color: #5BACC3;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.Cold-Drinks {
+  background-color: #eff6f8;
+  text-align: center;
+}/*# sourceMappingURL=menu.css.map */
