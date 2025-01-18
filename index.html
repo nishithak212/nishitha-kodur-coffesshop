@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="./css/global.css" type="text/css" rel="stylesheet">
-    <link href="./css/landing.css" type="text/css" rel="stylesheet">
+    <link href="./scss/landing.css" rel="stylesheet">
+    <link href="./scss/partials/global.css" rel="stylesheet">
     <title>Coffee Shop - Home</title>
 </head>
 <body>
 
 <header>
-    <ul class="header-items">
-        <li class="header-items__list"><a href="../index.html">
-            <img class="coffee-beans" src="../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee-beans" width="50px">
-         </a></li>
-         <li class="nitro class header-items__list"><a href="./index.html" alt="landing page">nitro</a></li>
-         <li class="header-items__list"><a href="./index.html">ABOUT</a></li>
-         <li class="header-items__list"><a href="./pages/menu.html">MENU</a></li>
-        <li class="header-items__list"><a class="nav__list--shopnow" href="./pages/menu.html">SHOP NOW</a></li>
+    <nav class="header-nav">
+        <a class="header-nav__logo" href="../index.html">
+            <img class="header-nav__logo header-nav__logo--icon" src="../assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee-beans" width="50px">
+         </a>
+            <a class="header-nav__brand" href="./index.html" alt="landing page"><h2 class="header-nav__brand--link">nitro</h2></a>
+    <ul class="header-nav__list">
+         <li><a  class="header-nav__list--item" href="./index.html">ABOUT</a></li>
+         <li><a class="header-nav__list--item" href="./pages/menu.html">MENU</a></li>
+        <li><a class="header-nav__list--item--shoplink" href="./pages/menu.html">SHOP NOW</a></li>
     </ul>
+</nav>
 </header>
-    <section class="coffee-description">
-        <h1 class="text">Nitro Coffee</h1>
-        <p class="coffee-description__text">Coffee is a brewed drink prepared from <br>roasted coffee beans, the seeds of berries <br>from certain Coffea species.</p>
-        <a class="coffee-description__shop-now" href="./pages/menu.html">SHOP NOW</a>
-        <aside>
-        <img class="coffee-description__coffeebag--image" src="./assets/images/coffeebeans-hero.png" alt="coffee bag">
+
+    <section class="hero">
+        <div class="hero__content">
+        <h1 class="hero__text">Nitro Coffee</h1>
+        <p class="hero__description">Coffee is a brewed drink prepared from <br>roasted coffee beans, the seeds of berries <br>from certain Coffea species.</p>
+        <a class="hero__link" href="./pages/menu.html">SHOP NOW</a>
+    </div>
+        <aside class="hero__image">
+        <img class="hero__image--side" src="./assets/images/coffeebeans-hero.png" alt="coffee bag">
     </aside>
 </section>
 
 
 <!--Section for 'Our Products'-->
-<h2 class="text__product">Our Products</h2>
-<section class="productCard">
+<section class="products">
+ <h2 class="product_title">Our Products</h2> 
+
     <div class="productCard__cardDetails">
         <img src="./assets/images/coffeebeans.png" alt="Coffee Beans" class="productCard__image">
         <div class="productCard_content">
@@ -57,26 +63,31 @@
     </div>
 </section>
 
+
+<!--  
 <section>
+     -->
     <!-- <input class="view-all" type="button" value="VIEW ALL" href="./pages/menu.html"> -->
-    <a href="./pages/menu.html" class="view-all">VIEW ALL</a>
+    <!-- <a href="./pages/menu.html" class="view-all">VIEW ALL</a> 
 </section>
-
-
-
-
-<!-- <a href="./pages/menu.html"><input class="view-all" type="button" value="VIEW ALL"></a> - I tried this, but input  is not permitted in anchor tag. Therefore, using a tag in below line of code-->
+-->
 
 
 <!--Discounts section-->
+
+<!--  
 <div class="Discounts">Get 20% off your first order with code: <span class="bold">FirstNitro</span></div>
 
 <footer class="details">
     <section class="addressSection">
         <h3 class="addHoursSocial">Address</h3>
        <p class="address">503 Broadway Penthouse <br>New York</p>
-        <!-- <p class="address">503 Broadway Penthouse, New York</p> -->
+
+       
          </section>
+         -->
+
+         <!--  
     <section class="hoursSection">
         <h3 class="addHoursSocial">Hours</h3>
         <p class="hours">Monday-Friday: <span class="time">9am - 7pm</span></p>
@@ -91,5 +102,6 @@
 
 
 </footer>
+-->
 </body>
 </html>
