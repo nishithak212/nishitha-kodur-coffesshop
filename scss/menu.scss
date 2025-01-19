@@ -63,9 +63,7 @@ color:#5BACC3;
         background-position:center;
         background-size:cover;
 
-    &__conatiner{
-        
-    }
+
     &__titlebox{
         background-color:#393939;
         text-align: center;
@@ -87,6 +85,20 @@ color:#5BACC3;
         
 
     }
+    &__container--bluebox{
+        position:relative;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        width:18.75rem;
+        height:12.5rem;
+        //background-color: #393939;
+        border: 5px solid #5BACC3;
+        margin-top:-13.7rem;
+        margin-left:-1.45rem;
+       
+    }
+
 }
 
 .menuItems {
@@ -95,6 +107,7 @@ color:#5BACC3;
     padding: 0;
     text-align: center;
     height: 4rem;
+    margin-top:0;
     margin-bottom:0;
 
     &__list{

@@ -75,6 +75,17 @@ body {
   text-transform: uppercase;
   align-content: center;
 }
+.hero__container--bluebox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18.75rem;
+  height: 12.5rem;
+  border: 5px solid #5BACC3;
+  margin-top: -13.7rem;
+  margin-left: -1.45rem;
+}
 
 .menuItems {
   background-color: #393939;
@@ -82,6 +93,7 @@ body {
   padding: 0;
   text-align: center;
   height: 4rem;
+  margin-top: 0;
   margin-bottom: 0;
 }
 .menuItems__list {
