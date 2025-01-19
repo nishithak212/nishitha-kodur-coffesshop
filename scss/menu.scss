@@ -6,63 +6,87 @@ body{
     padding:0;
 }
 
-.header-items{
-list-style-type: none;
-background-color: #FFF0ED;
-}
 
-
-.header-items__list{
-
-    list-style-type: none;
-    display: inline-block;
-    margin: 15px 0;
-    padding: 5px 10px;
-    font-size: 1.25rem;
+.header-nav {
+    background-color: #FFF0ED;
+    display:flex;
+    justify-content: space-between;
     padding-left: 1.25rem;
+    align-items: center;
 
+    &__brand--logo{
+        display:inline-block;
+        margin:0;
+        vertical-align: text-bottom;
+    }
+
+    &__brand--title--link{
+        display:inline-block;
+        font-size: 3.75rem;
+        color: #393939;
+        text-decoration: none;
+        font-weight: lighter;
+
+    }
+
+    &__list, li{
+        display: inline-block;
+    }
+
+    &__list--item{
+text-decoration: none;
+color:#393939;
+font-size: 1.3125rem;
+            font-weight: light;
+            padding:1.25rem;
+            margin:1.25rem;
+
+    }
+
+    &__list--item--shoplink{
+@extend .header-nav__list--item;
+color:#5BACC3;
+    }
 }
 
-.header-items .header-items__list a{
-    text-decoration: none;
-    color:#393939;
-    font-size: 1.3125rem;
-    font-weight: 400;
-}
-
-.header-items li .nav__list--shopnow{
-    color:#5BACC3;
-}
-
-.nitro{
-    font-size: 3.125rem;
-    font-weight: 300;
-    color:#393939;
-    margin-left:0;
-    /* padding-left: 1.25rem; */
-}
-
-.menu{ 
-    box-sizing: content-box;
-    height: 800px;
+.hero{
+    display:flex;
+    align-self:center;
+    align-items:center;
+    justify-content:center;
     width:100%;
-    background-image: url(../assets/images/coffee-circle.jpg);
-    background-position:center;
-    background-size:cover;
-    margin:1.25rem;
-}
+    height:50rem;
+    height: 45rem;
+    flex-direction:column;
+        width:100%;
+        background-image: url(../assets/images/coffee-circle.jpg);
+        background-position:center;
+        background-size:cover;
 
+    &__conatiner{
+        
+    }
+    &__titlebox{
+        background-color:#393939;
+        text-align: center;
+        width:18.75rem;
+        height:12.5rem;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        align-self:center;
+        
+        &--text{
+            font-size: 3.75rem;
+            font-weight: 300;
+            color:white;
+            text-align: center;
+            text-transform:uppercase;
+            align-content: center;
+        }
+        
 
-.menu__header{
-box-sizing:content-box;
-width:18.75rem;
-height:12.5rem;
-background-color: #393939;
-font-size: 3.75rem;
-font-weight: 300;
-color:#FFF;
-text-align: center;
-margin-left:70rem;
+    }
 }
 
 .menuItems {
@@ -70,57 +94,108 @@ margin-left:70rem;
     color: white;
     padding: 0;
     text-align: center;
-    height: 5rem;
-  }
-  
-  .menuItems__list{
-    list-style-type: none;
-    display: inline-block;
-    margin: 15px 0;
-    padding: 5px 10px;
-    border-left: 5px solid #5BACC3 ;
-    font-size: 1.25rem;
+    height: 4rem;
+    margin-bottom:0;
+
+    &__list{
+        list-style-type: none;
+        display: inline-block;
+        margin: 0.9375rem 0;
+       padding:0 1.5rem;
+        border-left: 0.3125rem solid #5BACC3 ;
+        font-size: 1.3125rem;
+    }
   }
 
-.description{
- text-align: center;
- font-style: italic;
- font-size: 1.125rem;
- font-weight: 400;
- /*padding-right:100rem;*/
- line-break:auto;
- margin-right: 40rem;
- margin-left: 40rem;
- box-sizing: content-box;
- max-height: 4.5em;
- text-overflow: ellipsis;
- white-space: wrap;
-}
-
-.Hot-Drinks,.Pastries{
-    background-color:  #FFF0ED;
+.hot-drinks{
+    background-color: #FFF0ED;
     text-align:center;
-   
+    
+    &__title{
+        font-size: 60px;
+        font-weight:lighter;
+        margin-top:0;
+        text-align: center;
+        padding-top:2rem;
+        color:#393939;
+    }
+        &__item{
+            text-align: center;
+            color:#393939;
+            font-size: 2.0625rem;
+            font-weight: lighter;
+            margin-bottom:0.5rem;
+            margin-top:0.5rem;
+        }
+
+        &__description{
+            @extend .hot-drinks__item;
+            font-style: italic;
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-break:auto;
+            margin:auto;
+            width:32%;
+            box-sizing: border-box;
+            max-height: 4.5em;
+            text-overflow: ellipsis;
+            white-space: wrap;
+
+        }
+
+        &__price{
+            color:#5BACC3;
+            font-weight: 400;
+            font-size:1.3125rem;
+            margin-top:0.5rem;
+            margin-bottom:0;
+            padding-bottom:2rem;;
+            margin-top:0.5rem;
+        }
+    
 }
 
-h2{
-    font-size: 3.75rem;
-    font-weight: 300;
+
+.cold-drinks{
+    background-color: #F7F7F7;
+    text-align:center;
+    
+    &__title{
+        @extend .hot-drinks__title;
+    }
+        &__item{
+            @extend .hot-drinks__item;
+        }
+
+        &__description{
+            @extend .hot-drinks__item;
+            @extend .hot-drinks__description;
+
+        }
+
+        &__price{
+            @extend .hot-drinks__price;
+        }
+    
 }
 
-h3{
-    text-align: center;
-    font-size: 2.0625rem;
-    font-weight: 300;
-}
+.pastries{
+    @extend .hot-drinks;
+    &__title{
+        @extend .hot-drinks__title;
+    }
+        &__item{
+            @extend .hot-drinks__item;
+        }
 
-.price{
-    color:#5BACC3;
-    font-size: 1.125rem;
-    font-weight: 400;
-}
+        &__description{
+            @extend .hot-drinks__item;
+            @extend .hot-drinks__description;
 
-.Cold-Drinks{
-    background-color: #eff6f8;
-    text-align:center
+        }
+
+        &__price{
+            @extend .hot-drinks__price;
+        }
+
 }
