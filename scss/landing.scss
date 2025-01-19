@@ -45,6 +45,14 @@ font-size: 1.3125rem;
     &__list--item--shoplink{
 @extend .header-nav__list--item;
 color:#5BACC3;
+&:hover{
+    cursor:pointer;
+}
+&:active{
+    top:0px;
+    left:0px;
+    padding:1.25rem;
+}
     }
 }
 
@@ -74,6 +82,17 @@ color:#5BACC3;
         margin-bottom:40px;
     }
 
+    &__offset{
+margin-top: 5rem;
+  border: 2px solid #393939;
+  width: 14.25rem;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+    }
+
     &__link{
         display: flex;
         justify-content: center;
@@ -87,7 +106,26 @@ color:#5BACC3;
         font-size: 1.3125rem;
         font-weight: 400;
         text-align:center;
+        position:absolute;
+        z-index: 0;
+        top:-10.9px;
+        left:3px;
     }
+
+    // &__link{
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     text-decoration: none;
+    //     background-color: #5BACC3;
+    //     width:11.25rem;
+    //     margin-top:1.25rem;
+    //     padding:1.25rem;
+    //     color:white;
+    //     font-size: 1.3125rem;
+    //     font-weight: 400;
+    //     text-align:center;
+    // }
 
     &__image{
         margin-right:15rem;
@@ -229,12 +267,19 @@ color:#5BACC3;
         
     }
 
+    &__offset{
+        @extend .hero__offset;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:510px;
+        margin-top:50px;
+    }
+
     &__viewall{
         @extend .hero__link;
-       text-align:center;
-       margin-top: 5rem;
-       margin-left:65rem;
-       margin-bottom: 1rem;
+        
+        //margin-right:20rem;
     }
 
 }
@@ -273,9 +318,23 @@ color:#5BACC3;
             width:3.125rem;
         }
     }  
+    // &__body--link{
+    //     @extend .hero__link;
+    // }  
+
+    &__body--offset{
+        @extend .hero__offset;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin: left 0.0625rem;
+        margin-top:2rem;
+    }
+
     &__body--link{
         @extend .hero__link;
-    }  
+        text-transform: uppercase;
+    }
     
     &__image{
         background-image: url("../assets/images/coldbrewbackground.png");
@@ -304,21 +363,43 @@ color:#5BACC3;
     text-align: center;
     font-size: 2.8125rem;
     font-weight: 400;
+    animation: flash 2.5s infinte;
+
 
     &--bold{
     font-size: 2.8125rem;
     font-weight:700;
     }
-}
 
+}
 
 .footer{
     background-color: #FFF0ED;
     display:flex;
+    width:100%;
     justify-content: space-evenly;
     padding-top:3.125rem;
     padding-bottom:3.125rem;
 
+    // &__section{
+    //     display: flex;
+    //     justify-content: space-between;
+    //     padding:1.3rem 0;
+
+
+    &__logo--lt{
+        background-image: url("../assets/logos/coffee-beans-logo-and-footer.svg");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        width:7.5rem;
+        height:7.5rem;
+        opacity:25%;
+      align-self:flex-start;
+        margin-top:1.25rem;
+        background-position-x: -2rem;
+
+    }
     &__address--title{
         font-size:2.0625rem;
         font-weight:300;
@@ -328,6 +409,14 @@ color:#5BACC3;
     &__address--add{
         font-size: 1.125rem;
         font-weight: 400;
+
+    }
+
+    &__logo--rt{
+        @extend .footer__logo--lt;
+        align-self: flex-end;
+        margin-bottom:1.25rem;
+        background-position: 2rem;
 
     }
     
@@ -366,3 +455,17 @@ color:#5BACC3;
         width:3.125rem;
     }
 }
+
+@keyframes flash{
+    0%{
+        opacity:100%;
+        background-color: #393939;
+    }
+    50%{
+        background-color: #5BACC3;
+    }
+    100%{
+        opacity:100%;
+        background-color: #393939;
+    }
+    }
