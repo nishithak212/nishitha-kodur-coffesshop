@@ -28,7 +28,8 @@ body {
   text-decoration: none;
   font-weight: lighter;
 }
-.header-nav__list, .header-nav li {
+.header-nav__list,
+.header-nav li {
   display: inline-block;
 }
 .header-nav__list--item, .header-nav__list--item--shoplink {
@@ -70,7 +71,7 @@ body {
 .hero__titlebox--text {
   font-size: 3.75rem;
   font-weight: 300;
-  color: white;
+  color: #FFF;
   text-align: center;
   text-transform: uppercase;
   align-content: center;
@@ -110,7 +111,7 @@ body {
   text-align: center;
 }
 .hot-drinks__title, .pastries__title, .cold-drinks__title {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: lighter;
   margin-top: 0;
   text-align: center;
